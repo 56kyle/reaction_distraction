@@ -1,4 +1,5 @@
 import { BaseAbility, registerAbility } from "../../../lib/dota_ts_adapter";
+import { LinearProjectile } from "../../../lib/projectile";
 
 @registerAbility()
 export class meepo_earthbind_ts_example extends BaseAbility {
@@ -48,7 +49,7 @@ export class meepo_earthbind_ts_example extends BaseAbility {
         ParticleManager.SetParticleControl(this.particle, 1, point);
         ParticleManager.SetParticleControl(this.particle, 2, Vector(projectileSpeed, 0, 0));
 
-        ProjectileManager.CreateLinearProjectile({
+        new LinearProjectile({
             Ability: this,
             EffectName: "",
             vSpawnOrigin: caster.GetAbsOrigin(),
