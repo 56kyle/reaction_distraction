@@ -10,9 +10,7 @@
 
     <snippets>
         <snippet name="ProjectileCombiner">
-            <Panel class="ProjectileCombiner" hittest="false">
-                <Image id="HeroImage" hittest="false" />
-            </Panel>
+            <Panel class="ProjectileCombiner" hittest="false"></Panel>
         </snippet>
     </snippets>
 </root>
