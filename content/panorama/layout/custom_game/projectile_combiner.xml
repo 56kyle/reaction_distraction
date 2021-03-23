@@ -1,0 +1,18 @@
+
+<root>
+    <styles>
+        <include src="file://{resources}/styles/custom_game/projectile_combiner.css" />
+    </styles>
+
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/projectile_combiner.js" />
+    </scripts>
+
+    <snippets>
+        <snippet name="ProjectileCombiner">
+            <Panel class="ProjectileCombiner" hittest="false">
+                <Image id="HeroImage" hittest="false" />
+            </Panel>
+        </snippet>
+    </snippets>
+</root>
